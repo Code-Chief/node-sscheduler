@@ -1,10 +1,5 @@
 # sscheduler
 
-[![Build Status](https://travis-ci.org/SSENSE/node-sscheduler.svg?branch=master)](https://travis-ci.org/SSENSE/node-sscheduler)
-[![Coverage Status](https://coveralls.io/repos/github/SSENSE/node-sscheduler/badge.svg?branch=master)](https://coveralls.io/github/SSENSE/node-sscheduler?branch=master)
-[![Latest Stable Version](https://img.shields.io/npm/v/@ssense/sscheduler.svg)](https://www.npmjs.com/package/@ssense/sscheduler)
-[![Known Vulnerabilities](https://snyk.io/test/npm/@ssense/sscheduler/badge.svg)](https://snyk.io/test/npm/@ssense/sscheduler)
-
 Flexible scheduler to find free time slots in the schedule of a resource (which could be a person, a meeting room, a car, etc...)
 
 **sscheduler** can also intersect the availability of multiple resources in order to find the time slots at which all the resources are available.
@@ -12,7 +7,7 @@ Flexible scheduler to find free time slots in the schedule of a resource (which 
 ## Installation
 
 ```bash
-npm install @ssense/sscheduler
+npm install @ninjapixel/sscheduler
 ```
 
 ## Basic usage
@@ -165,9 +160,22 @@ const availability = scheduler.getIntersection({
 });
 ```
 
+## Build
+
+```bash
+npm install
+gulp
+```
+
+## Test
+```bash
+npm run test:unit
+```
+
 ## Authors
 
-* **Mickael Burguet** - *Senior Developer* - [rundef](http://rundef.com)
+* **Mickael Burguet** - *Original author* - [ssense/sscheduler](https://github.com/SSENSE/node-sscheduler)
+* **Matt Michel** -  [ninjaPixel](https://www.ninjapixel.io)
 
 ## License
 
