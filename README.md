@@ -169,7 +169,8 @@ gulp
 
 ## Test
 ```bash
-npm run test:unit
+npm run compile
+npm run test
 ```
 
 ## Authors
