@@ -1,5 +1,5 @@
 {
-  "name": "@ninjapixel/sscheduler",
+  "name": "@code-chief/sscheduler",
   "version": "0.0.1",
   "description": "Flexible scheduler to find free time slots in the schedule of a resource",
   "main": "./dist/index.js",
@@ -9,7 +9,8 @@
     "test": "npm run test:unit",
     "test:unit": "NODE_ENV=test mocha tests/unit --recursive --compilers ts:ts-node/register --bail",
     "cover": "npm run cover:unit",
-    "cover:unit": "NODE_ENV=test ./node_modules/.bin/nyc --report-dir tests/coverage/unit npm run test:unit"
+    "cover:unit": "NODE_ENV=test ./node_modules/.bin/nyc --report-dir tests/coverage/unit npm run test:unit",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,7 @@
     "npm": ">= 3"
   },
   "dependencies": {
-    "lodash": "^4.13.1",
+    "lodash": "^4.17.11",
     "moment": "^2.21.0"
   },
   "devDependencies": {
