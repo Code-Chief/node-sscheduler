@@ -1,6 +1,6 @@
 {
   "name": "@code-chief/sscheduler",
-  "version": "0.0.3-0",
+  "version": "0.0.3",
   "description": "Flexible scheduler to find free time slots in the schedule of a resource",
   "main": "./dist/index.js",
   "scripts": {
